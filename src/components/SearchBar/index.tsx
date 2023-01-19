@@ -17,7 +17,7 @@ export default function SearchBar() {
     <View style={styles.container}>
       <TextInput
         style={styles.input}
-        placeholder='Search...'
+        placeholder='Search Recipe...'
         onChangeText={(text) => setSearchTerm(text)}
         onSubmitEditing={handleSearch}
         value={searchTerm}
