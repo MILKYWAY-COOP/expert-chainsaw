@@ -1,33 +1,37 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
+  main: {
+    width: '100%'
+  },
+  
   container: {
-    flex: 1,
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 20,
     alignItems: 'center',
     justifyContent: 'center'
   },
-  cardContainer: {
+  
+  imageContainer: {
+    backgroundColor: 'yellow',
     width: '90%',
     alignSelf: 'center',
     marginTop: 20,
-    padding: 10,
-    backgroundColor: '#fff',
     borderRadius: 10,
-    shadowColor: '#000',
-    shadowOpacity: 0.2,
-    shadowRadius: 10,
-    shadowOffset: { width: 0, height: 2 },
-    elevation: 5
+    overflow: 'hidden'
   },
   image: {
+    backgroundColor: 'yellow',
     width: '100%',
     height: 200,
-    borderRadius: 10
+    objectFit: 'cover'
   },
   title: {
     fontSize: 18,
     fontWeight: 'bold',
-    marginTop: 10,
+    margin: 10,
     textAlign: 'center'
   }
 });
