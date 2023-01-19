@@ -1,7 +1,9 @@
 import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
-  container: {},
+  container: {
+    width: '100%',
+  },
   input: {
     height: 40,
     width: '90%',
